@@ -23,7 +23,7 @@
     font-family: 'Lucida Calligraphy', cursive;
   }
   .overlay {
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -58,8 +58,6 @@
 }
 
 .text,
-.text_r,
-.image_r,
 .image {
   flex-basis: calc(50% - 20px);
   padding: 0 0px; /* Add spacing between sections */
@@ -70,8 +68,6 @@
     flex-direction: column; /* Stack sections vertically on smaller screens */
   }
  .text,
- .text_r,
- .image_r,
  .image {
     flex: 100%; /* Each section takes up 100% of the container width on smaller screens */
   }
@@ -87,19 +83,6 @@
 }
 
 .image img {
-  max-width: 100%; /* Ensure image doesn't exceed container width */
-}
-
-.text_r {
-  flex: 1; /* Take up remaining space */
-}
-
-.image_r {
-  flex: 1; /* Take up remaining space */
-  padding-right: 10px; /* Add spacing between image and text */
-}
-
-.image_r img {
   max-width: 100%; /* Ensure image doesn't exceed container width */
 }
 
@@ -152,7 +135,7 @@
   <div class="header">
     <div class="overlay"></div>
     <h2>Beatriz Leitão <br>&<br>Pedro Monteiro</h3>
-    <p>1 de Junho de 2024</p>
+    <h3>1 de Junho de 2024</h3>
   </div>
   <div class="content">
 
@@ -171,8 +154,8 @@
 <div class="section">
   <div class="text">
     <h3>Indumentária</h3>
-    <p>O dress code para o nosso casamento é elegante, porém descontraído, refletindo o ambiente de verão à beira-mar. </p>
-    <p>Como estaremos a navegar pelo Rio Tejo e o clima pode variar, recomendamos trazer um casaquinho ou echarpe para se protegerem caso seja necessário. </p>
+    <p>O dress code para o nosso casamento é descontraído, refletindo o ambiente de verão à beira-mar. </p>
+    <p>Como estaremos a navegar pelo rio Tejo e o clima pode variar, recomendamos trazer um casaquinho ou echarpe para se protegerem caso seja necessário. </p>
   </div>
   <div class="image">
     <img src="por_do_sol.jpeg" alt="por_do_sol">
@@ -181,7 +164,7 @@
 <div class="section">
   <div class="text">
     <h3>Mergulhos</h3>
-    <p>OEncorajamos todos a trazerem seus trajes de banho, pois nada é mais revigorante do que um mergulho no rio enquanto o sol se põe no horizonte. </p>
+    <p>Encorajamos todos a trazerem seus trajes de banho, pois nada é mais revigorante do que um mergulho no rio enquanto o sol se põe no horizonte. </p>
     <p>Os catamarãs têm quartos onde poderão trocar de roupa e guardar os seus pertences. </p>
   </div>
   <div class="image">
@@ -193,7 +176,7 @@
     <h3>Preparem-se para uma tarde e noite repletas de amor, risos e memórias inesquecíveis enquanto navegamos juntos neste capítulo emocionante de nossas vidas.</h3>
   </div>
   <div class="image">
-    <img src="banhos.jpeg" alt="banhos">
+    <img src="nos.jpeg" alt="nos">
   </div>
 </div>
   </div>
