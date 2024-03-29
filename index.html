@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Wedding</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+  .header {
+    background-image: url('background-image.jpg'); /* Replace 'background-image.jpg' with your actual image path */
+    background-size: contain;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image within the container */
+    position: relative; /* Make the container a positioning context */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Lucida Calligraphy', cursive;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly darker semi-transparent black overlay */
+  }
+
+  .header h1,
+  .header h2,
+  .header h3,
+  .header p {
+    position: relative; /* Ensure the text appears above the overlay */
+    z-index: 1; /* Ensure the text appears above the overlay */
+  }
+
+    .content {
+      padding: 50px;
+    }
+
+.section {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+.text {
+  flex: 1; /* Take up remaining space */
+  padding-right: 10px; /* Add spacing between text and image */
+}
+
+.image {
+  flex: 1; /* Take up remaining space */
+}
+
+.image img {
+  max-width: 75%; /* Ensure image doesn't exceed container width */
+}
+
+.text_r {
+  flex: 1; /* Take up remaining space */
+}
+
+.image_r {
+  flex: 1; /* Take up remaining space */
+  padding-right: 10px; /* Add spacing between image and text */
+}
+
+.image_r img {
+  max-width: 75%; /* Ensure image doesn't exceed container width */
+}
+
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .activities {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .activity {
+      flex-basis: 48%;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .activity img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .activity p {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.1); /* semi-transparent black background */
+      color: white;
+      padding: 10px;
+      margin: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .activity:hover img {
+      transform: scale(1.1); /* Adjust the zoom level as needed */
+    }
+    .activity:hover p {
+      opacity: 1;
+    }
+    @media (max-width: 768px) {
+      .activity {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="overlay"></div>
+    <h3>Beatriz Leitão</h3>
+    <h3>&</h3>
+    <h3>Pedro Monteiro</h3>
+    <p>1 de Junho de 2024</p>
+  </div>
+  <div class="content">
+
+<div class="section">
+  <div class="text">
+    <h3>Horas</h3>
+    <p>O embraque será às 15h e a celebração durará até às 22h</p>
+  </div>
+  <div class="image">
+    <img src="por_do_sol.jpeg" alt="por_do_sol">
+  </div>
+</div>
+<div class="section">
+  <div class="image_r">
+    <img src="banhos.jpeg" alt="banhos">
+  </div>
+  <div class="text_r">
+    <h3>Local</h3>
+    <p>O barco vai partir da doca de Santo Amaro em Lisboa e vamos fazer um passeio pelo Tejo</p>
+  </div>
+</div>
+<div class="section">
+  <div class="text">
+    <h3>Roupa</h3>
+    <p>Não é um casamento tradicional, portanto não vamos de gravata nem vestido de gala</p>
+    <p>Vamos com roupa especial mas fresca e leve</p>
+    <p>Recomendamos calçado raso para poderem andar no barco à vontade</p>
+  </div>
+  <div class="image">
+    <img src="por_do_sol.jpeg" alt="por_do_sol">
+  </div>
+</div>
+<div class="section">
+  <div class="image_r">
+    <img src="banhos.jpeg" alt="banhos">
+  </div>
+  <div class="text_r">
+    <h3>Banhos!</h3>
+    <p>Vamos poder dar mergulhos, portanto levem fatos de banho</p>
+    <p>Há quartos no barco para poderem vestir fato de banho</p>
+  </div>
+</div>
+
+  </div>
+
+</body>
+</html>
