@@ -51,9 +51,26 @@
 
 .section {
   display: flex;
-  /*flex-direction: column;  Arrange items vertically on small screens */
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  /*flex-direction: column; Arrange items vertically on small screens */
   align-items: center; /* Vertically center items */
   justify-content: space-between; /* Distribute space between items */
+}
+
+.text,
+.text_r,
+.image_r,
+.image {
+  flex: 0 0 50%; /* Each section takes up 50% of the container width */
+  padding: 0 10px; /* Add spacing between sections */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+@media (max-width: 768px) {
+  .text,
+  .image {
+    flex: 100%; /* Each section takes up 100% of the container width on smaller screens */
+  }
 }
 
 .text {
