@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Wedding</title>
+  <title>Pedro e Beatriz</title>
   <style>
     body {
       margin: 0;
@@ -15,9 +15,11 @@
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center; /* Center the image within the container */
     position: relative; /* Make the container a positioning context */
-    color: white;
+    color: black;
     text-align: center;
     padding: 50px 0;
+    font-size: 24px;
+    margin-bottom: 10px;
     font-family: 'Lucida Calligraphy', cursive;
   }
   .overlay {
@@ -29,9 +31,15 @@
     background-color: rgba(0, 0, 0, 0.1); /* Slightly darker semi-transparent black overlay */
   }
 
-  .header h1,
-  .header h2,
-  .header h3,
+.header h1 {
+  margin-top: 20px; /* Adjust as needed */
+}
+.header h2 {
+  margin-bottom: 100px; /* Adjust as needed */
+}
+.header h3 {
+  margin-top: 20px; /* Adjust as needed */
+}
   .header p {
     position: relative; /* Ensure the text appears above the overlay */
     z-index: 1; /* Ensure the text appears above the overlay */
@@ -43,6 +51,7 @@
 
 .section {
   display: flex;
+  /*flex-direction: column;  Arrange items vertically on small screens */
   align-items: center; /* Vertically center items */
   justify-content: space-between; /* Distribute space between items */
 }
@@ -57,7 +66,7 @@
 }
 
 .image img {
-  max-width: 75%; /* Ensure image doesn't exceed container width */
+  max-width: 100%; /* Ensure image doesn't exceed container width */
 }
 
 .text_r {
@@ -70,7 +79,7 @@
 }
 
 .image_r img {
-  max-width: 75%; /* Ensure image doesn't exceed container width */
+  max-width: 100%; /* Ensure image doesn't exceed container width */
 }
 
 
@@ -121,9 +130,7 @@
 <body>
   <div class="header">
     <div class="overlay"></div>
-    <h3>Beatriz Leitão</h3>
-    <h3>&</h3>
-    <h3>Pedro Monteiro</h3>
+    <h2>Beatriz Leitão <br>&<br>Pedro Monteiro</h3>
     <p>1 de Junho de 2024</p>
   </div>
   <div class="content">
