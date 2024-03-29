@@ -61,14 +61,18 @@
 .text_r,
 .image_r,
 .image {
-  flex: 0 0 auto; /* Each section takes up 50% of the container width */
-  padding: 0 10px; /* Add spacing between sections */
-  box-sizing: border-box; /* Include padding in the width calculation */
+  flex-basis: calc(50% - 20px);
+  padding: 0 0px; /* Add spacing between sections */
 }
 
 @media (max-width: 768px) {
-  .text,
-  .image {
+  .section {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+  }
+ .text,
+ .text_r,
+ .image_r,
+ .image {
     flex: 100%; /* Each section takes up 100% of the container width on smaller screens */
   }
 }
